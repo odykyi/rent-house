@@ -1,5 +1,5 @@
 {
-  "name": "rent-house minimal-react-webpack-babel-setup",
+  "name": "rent-house-minimal-react-webpack-babel-setup",
   "version": "1.0.0",
   "description": "## Installation",
   "main": "./src/index.js //Do not change this line, react-scripts use by default this file",
