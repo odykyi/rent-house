@@ -1,13 +1,15 @@
 {
-  "name": "rent-house minimal-react-webpack-babel-setup",
+  "name": "minimal-react-webpack-babel-setup",
   "version": "1.0.0",
-  "description": "## Installation",
-  "main": "./src/index.js //Do not change this line, react-scripts use by default this file",
+  "description": "",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "cross-env PORT=4100 react-scripts start",
-    "build": "react-scripts build",
-    "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "echo \"No test specified\" && exit 0",
+    "/start": "cross-env PORT=4100 react-scripts start",
+    "/build": "react-scripts build",
+    "/test": "cross-env PORT=4100 react-scripts test --env=jsdom",
+    "/eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
@@ -43,13 +45,5 @@
     "babel-preset-env": "^1.7.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rent-house.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rent-house/issues"
-  },
-  "homepage": "https://github.com/rent-house#readme"
+  }
 }
