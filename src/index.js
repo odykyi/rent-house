@@ -1,28 +1,29 @@
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {
-  history,
-  store
-} from './store';
+  Donut,
+  Heading,
+  Provider
+} from 'rebass'
+import RentalTypes from './rebass/RentalTypes';
+import Cities from './rebass/Cities';
 
-import {
-  Route,
-  Switch
-} from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
-
-import App from './components/App';
 
 ReactDOM.render((
-  <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <Switch>
-        <Route path="/" component={App} />
-      </Switch>
-    </ConnectedRouter>
+  <Provider>
+    <Heading>Hello</Heading>
+    <Donut
+      value={3/4}
+    />
+    <RentalTypes/>
+    <Cities/>
   </Provider>
 
 ), document.getElementById('root'));
 
-//module.hot.accept()
+
+if (module) {
+  module.hot.accept()
+
+}
