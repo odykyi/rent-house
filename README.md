@@ -1,10 +1,16 @@
 # Ola amigos!
 
+Do you have _nodejs_ ?
+
+sorry, but it's not php project
+
+also you need to have some dockers ...
+
 ## Installation
 
   1.
 
-    $ `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
+    $ git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git
 
   2.
 
@@ -16,8 +22,8 @@
 
     $ npm start
 
-  OR
+    OR
 
     $ docker-compose up
 
-  4. visit `http://localhost:8080/`
+  4. visit `http://localhost:4100/`
