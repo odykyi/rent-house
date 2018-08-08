@@ -1,13 +1,39 @@
 # Ola amigos!
 
+Do you have _nodejs_ ?
+
+sorry, but it's not *php* project
+
+also you need to have some dockers  ...
+
+if you have errors in installation process, please remove your Windows and use Mac
+
+also you can run dockers with `sudo` mode (NO!)
+
+before running project, please read more than 20 books about nodejs technology and only then run project
+
+if you don't wanna use eslint, please remove your github profile and go out
+
+please copy this project and share with friends :)
+
 ## Installation
 
-* `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
-* cd minimal-react-webpack-babel-setup
-* npm install
-* npm start
-or
+  1.
+
+    $ git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git
+
+  2.
+
+    $ cd minimal-react-webpack-babel-setup
+
+  3.
+
+    $ npm install
+
+    $ npm start
+
+    OR
 
     $ docker-compose up
 
-* visit `http://localhost:8080/`
+  4. visit `http://localhost:4100/`
