@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: npm start
+    volumes:
+    - .:/app/
+    ports:
+    - "4100:4100"
+    - "5858:5858"
+    restart: always
