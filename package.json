@@ -6,7 +6,25 @@
     "@material-ui/core": "^1.4.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "@types/helmet": "0.0.37",
+    "@types/morgan": "^1.7.35",
+    "@types/sequelize": "^4.27.8",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.15.6",
+    "js-yaml": "^3.11.0",
+    "jsonwebtoken": "^8.2.0",
+    "morgan": "^1.9.0",
+    "pg": "6.1.0",
+    "pg-hstore": "^2.3.2",
+    "phone": "^2.0.0-rc.1",
+    "sequelize": "^4.0.0",
+    "sequelize-migration-pg-extras": "^1.0.1",
+    "swagger-express-middleware": "^1.0.0-alpha.12",
+    "swagger-ui-express": "^2.0.15"
   },
   "devDependencies": {
     "cross-env": "^5.1.4",
@@ -21,6 +39,7 @@
     "start": "cross-env PORT=4100 react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "nodemon ./bin/www -w server/app.js -w server  -e js,json,yaml"
   }
 }
