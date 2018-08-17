@@ -128,3 +128,4 @@ dist/
 # Jetbrains
 *.iml
 
+atlassian-ide-plugin.xml

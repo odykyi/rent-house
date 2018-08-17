@@ -6,6 +6,6 @@ services:
     volumes:
     - .:/app/
     ports:
-    - "4100:4100"
-    - "5858:5858"
+    - "4100:4100" #react frontend port 4100
+    - "5858:5858" #debug port
     restart: always
