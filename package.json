@@ -21,6 +21,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "^1.1.4",
+    "react-styleguidist": "^7.2.3",
     "sequelize": "^4.38.0",
     "sequelize-migration-pg-extras": "^1.0.1",
     "swagger-express-middleware": "^0.4.7",
@@ -28,19 +29,22 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "eslint": "^5.3.0",
+    "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "update-notifier": "^2.5.0"
   },
   "scripts": {
     "start": "cross-env PORT=4100 react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "serve": "nodemon ./server/bin/www -w ./server/app.js -w server -e js,json,yaml"
   }
 }

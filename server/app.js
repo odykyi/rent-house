@@ -1,3 +1,8 @@
+const updateNotifier = require('update-notifier');
+const pkg = require('../package.json');
+const notifier = updateNotifier({pkg});
+notifier.notify();
+console.log(notifier.update);
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
@@ -18,6 +23,5 @@ app.use(bodyParser.urlencoded({
 }));
 
 require('./routes')(app);
-
 
 module.exports = app;
