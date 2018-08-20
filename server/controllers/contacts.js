@@ -1,5 +1,3 @@
-const phone = require('phone');
-
 const {Contact} = require('../models');
 
 module.exports = {
@@ -14,11 +12,9 @@ module.exports = {
       anotherPhoneNumber,
     } = req.body;
 
-    const clearedPhoneNumber = phone(phoneNumber)[0]
-      || phoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
+    const clearedPhoneNumber = phoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
 
-    const clearedAnotherPhoneNumber = phone(anotherPhoneNumber)[0]
-      || anotherPhoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
+    const clearedAnotherPhoneNumber = anotherPhoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
 
     try {
       const contact = await Contact
@@ -49,11 +45,9 @@ module.exports = {
     }
 
     const list = req.body.list.map((item) => {
-      const clearedPhoneNumber = phone(item.phoneNumber)[0]
-        || item.phoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
+      const clearedPhoneNumber = item.phoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
 
-      const clearedAnotherPhoneNumber = phone(item.anotherPhoneNumber)[0]
-        || item.anotherPhoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
+      const clearedAnotherPhoneNumber = item.anotherPhoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
 
       return {
         firstName: item.firstName,

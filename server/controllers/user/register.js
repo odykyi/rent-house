@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const phone = require('phone');
 
 const config = require('../../auth/config');
 
@@ -18,8 +17,7 @@ module.exports = async (req, res) => {
       .status(400)
       .send('Fields [userName, phoneNumber, password] are required');
   }
-  const clearedPhoneNumber =
-    phone(phoneNumber)[0] || phoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
+  const clearedPhoneNumber = phoneNumber.replace(/[\(\)\.\-\ \+\x]/g, '');
   const hashedPassword = bcrypt.hashSync(password, 8);
   console.log('clearedPhoneNumber111', clearedPhoneNumber);
 
